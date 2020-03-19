@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_c834367f5cba463cb5243acf25fcb484 {
+                #map_be7d6c40caa9469cbd7109dc892232b7 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,13 +35,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_c834367f5cba463cb5243acf25fcb484" ></div>
+            <div class="folium-map" id="map_be7d6c40caa9469cbd7109dc892232b7" ></div>
         
 </body>
 <script>    
     
-            var map_c834367f5cba463cb5243acf25fcb484 = L.map(
-                "map_c834367f5cba463cb5243acf25fcb484",
+            var map_be7d6c40caa9469cbd7109dc892232b7 = L.map(
+                "map_be7d6c40caa9469cbd7109dc892232b7",
                 {
                     center: [40.755571, -73.9465337],
                     crs: L.CRS.EPSG3857,
@@ -55,9 +55,28 @@
 
         
     
-            var tile_layer_5de60ce35c934ca4a73d745f4c26dbfe = L.tileLayer(
+            var tile_layer_dd23870f544546f09dbc1d65b1a6e1e5 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_c834367f5cba463cb5243acf25fcb484);
+            ).addTo(map_be7d6c40caa9469cbd7109dc892232b7);
         
+    
+            var marker_7a42bfc27d59446cb36f952c826e3b0d = L.marker(
+                [40.8448089, -73.9106434],
+                {}
+            ).addTo(map_be7d6c40caa9469cbd7109dc892232b7);
+        
+    
+        var popup_7273f11b044f41fb8e51ec9313c2ca67 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b97f495c5e354eb5a478bd7bcea1f37f = $(`<div id="html_b97f495c5e354eb5a478bd7bcea1f37f" style="width: 100.0%; height: 100.0%;"><strong>Location One</strong></div>`)[0];
+            popup_7273f11b044f41fb8e51ec9313c2ca67.setContent(html_b97f495c5e354eb5a478bd7bcea1f37f);
+        
+
+        marker_7a42bfc27d59446cb36f952c826e3b0d.bindPopup(popup_7273f11b044f41fb8e51ec9313c2ca67)
+        ;
+
+        
+    
 </script>
