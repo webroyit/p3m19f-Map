@@ -40,5 +40,14 @@ folium.Marker([40.7183356,-73.9549321],
                 tooltip = tooltip,
                 icon = logoIcon).add_to(m)
 
+# circle marker
+folium.CircleMarker(
+    location = [40.7451322,-73.8502186],
+    radius = 50,
+    popup = "Lucky Zone",
+    fill = True,
+    fill_color = "#f5f542"
+).add_to(m)
+
 # generate the code for the map on index.html
 m.save("index.html")
