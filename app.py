@@ -25,5 +25,11 @@ folium.Marker([40.7804975,-73.9391392],
                 tooltip = tooltip,
                 icon = folium.Icon(color = "green")).add_to(m)
 
+# folium.Icon(color, icon) to change the color and icon
+folium.Marker([40.7609969,-73.9504689],
+                popup = "<strong>Location Three</strong>",
+                tooltip = tooltip,
+                icon = folium.Icon(color = "red", icon = "leaf")).add_to(m)
+
 # generate the code for the map on index.html
 m.save("index.html")
